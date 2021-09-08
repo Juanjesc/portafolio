@@ -1,1 +1,1 @@
-- Bienveniodos al repositorio de mi portafolio, espero que os guste 😙 🤙
+- Bienvenidos al repositorio de mi portafolio, espero que os guste 🤠 🤙
