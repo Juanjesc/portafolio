@@ -16,10 +16,11 @@
             <div class="contenido">
                 <h1 class="titulo">Juan Jesús Sedano Calderón</h1>
                 <p class="subtitulo">Front-end Developer</p>
-
+                
                 <a href="https://github.com/Juanjesc"><i class="fab fa-github"></i> Github</a>
             </div>
         </div>
+        
     </div>
     <main class="main">
         <section class="sobre-mi">
@@ -91,22 +92,26 @@
     </main>
     <footer class="footer">
         <div class="contenedor">
-            <form action="">
+            <form action="correo.php" method="post">
                 <div class="widget">
                     <h3>Contacta conmigo</h3>
                     <div class="campo">
                         <label for="nombre">Tu nombre: </label>
-                        <input type="text" id="nombre" placeholder="Nombre" >
+                        <input type="text" id="nombre" placeholder="Nombre" name="nombre" required>
     
                     </div>
                     <div class="campo">
                         <label for="contact">Tu email: </label>
-                        <input type="email" id="contact" class="contacto" placeholder="Email">
+                        <input type="email" id="contact" class="contacto" placeholder="Email" name="email" required>
     
                     </div>
                     <div class="campo">
-                        <label for="telefono">Tu teléfono (opcional)</label>
-                        <input type="tel" id="telefono" placeholder="Teléfono">
+                        <label for="">Asunto:</label>
+                        <input type="text" id="asunto" placeholder="Asunto" name="asunto" required>
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="3" placeholder="Mensaje" class="mensajito"></textarea>
                     </div>
                     
                 </div>
@@ -115,6 +120,7 @@
             </form>
             
         </div>
+            
     </footer>
     
 </body>

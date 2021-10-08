@@ -55,13 +55,13 @@ a{
 }
 
 .hero{
-    background-image: url(../img/foto1.jpg);
+    background-image: url(../img/lapiz.png);
     background-repeat: no-repeat;
     height: 100vh;
-    
+    background-position: center;
     transition: all 1s ease-in-out;
     background-position-x: -640px;
-    background-position-y: -400px;
+    
     
     
     
@@ -72,13 +72,17 @@ a{
 }
 
 .hero .contenedor{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     height: 60vh;
     align-content: center;
 }
 .hero .contenido{
     
     color: black;
+    margin-top: 4rem;
+    padding-left: .8rem;
+    
     
 
 }
@@ -111,11 +115,10 @@ a{
         height: 100vh;
         background-attachment: fixed;
         transition: all 1s ease-in-out;
-        background-position:bottom;
-        
-       
-        
-        
+        background-position:bottom;  
+    }
+    .hero .contenido{
+        margin-top: 14rem;
     }
     
     
@@ -331,6 +334,15 @@ p{
     
 
 }
+.campo .mensajito{
+    resize: none;
+    padding: .5rem;
+    border: none;
+    align-self: center;
+    max-width: 60%;
+   
+    
+}
 .boton{
     border: none;
     display: block;
@@ -340,6 +352,7 @@ p{
     color: var(--oscuro);
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -366,6 +379,11 @@ p{
     }
     .campo input{
         flex: 1;
+        max-width: 100%;
+    }
+    .campo .mensajito{
+        flex: 1;
+        padding: .5rem;
         max-width: 100%;
     }
     
