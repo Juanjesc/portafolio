@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Oswald" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Freelancer</title>
 </head>
@@ -24,9 +27,9 @@
     </div>
     <main class="main">
         <section class="sobre-mi">
-            <div class="sobre-mi-contenedor">
+            <div class="sobre-mi-contenedor"> 
                 <div class="sobre-mi-info">
-                    <h2 class="titulo-sobremi">Hola!</h2>
+                    <h2 class="titulo-sobremi">Hola !</h2>
                     <p>Me llamo Juan Jesús, y soy un estudiante en Desarrollo de Aplicaciones Web, entusiasta del mundo de la programación, tengo un perfil mucho más Front-end que Back-end, por lo que intento estar siempre al día en cuanto a diseño web se refiere.
                     <br> <br> Me gusta decir que sigo la filosofía de las grandes mentes que han rodeado el mundo del desarrollo informático, personalidades como Bill Gates, Mark Zuckerberg o Steve Jobs, coincidían en que <b>todo el mundo debería aprender a programar</b>, ya que programar te ayuda a pensar, a razonar y a ser más creativos en el día a día, estar bajo ese pensamiento me hace disfrutar lo que hago y me anima continuamente a aprender lo que aún no sé.</p>
 
@@ -97,12 +100,12 @@
                     <h3>Contacta conmigo</h3>
                     <div class="campo">
                         <label for="nombre">Tu nombre: </label>
-                        <input type="text" id="nombre" placeholder="Nombre" name="nombre" required>
+                        <input type="text" id="nombre" placeholder="Nombre" name="nombre" required autocomplete="off">
     
                     </div>
                     <div class="campo">
                         <label for="contact">Tu email: </label>
-                        <input type="email" id="contact" class="contacto" placeholder="Email" name="email" required>
+                        <input type="email" id="contact" class="contacto" placeholder="Email" name="email" required autocomplete="off">
     
                     </div>
                     <div class="campo">
@@ -123,6 +126,7 @@
         </div>
             
     </footer>
+    
     
 </body>
 </html>
