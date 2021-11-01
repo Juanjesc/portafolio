@@ -54,7 +54,9 @@ a{
 span{
     color: var(--secundario);
     font-weight: bold;
+    
 }
+
 
 .contenido a{
     display: block;
@@ -65,6 +67,7 @@ span{
     width: max-content;
     border-radius: 20px;
     font-weight: 400;
+    transition: .2s ease;
    
 }
 .contenido a:hover{
@@ -73,13 +76,14 @@ span{
     background-color: var(--primario);
     font-weight: bold;
     padding: 0.5rem 0.7rem;
+    transform: rotate(-2deg);
 
 }
 .fab{
     font-size: 3rem;
 }
 .fas{
-    color: var(--naranja);
+    color: var(--secundario);
     font-size: 3rem;
     margin-top: 1rem;
 
