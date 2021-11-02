@@ -1,4 +1,5 @@
 :root{
+
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteSecundaria: 'Oswald', sans-serif;
     --primario: #16161a;
@@ -26,6 +27,7 @@ html,body{
 body{
     font-family: var(--fuenteSecundaria);
     background-color: var(--negro);
+
     
 }
 .contenedor{
@@ -130,6 +132,7 @@ span{
     
     
     
+    
    
 }
 
@@ -228,6 +231,7 @@ p{
         gap: 1.5rem;
         box-shadow: none;
         
+        
     }
     
 
@@ -245,6 +249,10 @@ p{
    
 
 
+}
+.servicios .servicio{
+    margin-bottom: 2rem;
+    
 }
 /*Sobre mí */
 .sobre-mi{
@@ -282,6 +290,8 @@ p{
         text-align: center;
     }
     
+    
+    
 }
 /* Portafolio*/
 .elemento{
@@ -292,6 +302,7 @@ p{
 .portafolio{
     
     background-color: var(--primario);
+   
     
 
 }
@@ -363,9 +374,12 @@ p{
     } */
     .portafolio{
         width: 80%;
+
         margin: 0 auto 2rem;
         border-radius: 20px;
+
         
+
        
     }
     .tarjeta{
@@ -378,7 +392,9 @@ p{
 }
 /*Footer (contacto) */
 .footer{
+
     background-color: var(--negro);
+
     color: var(--claro);
     font-family: var(--fuentePrincipal);
     padding: 2rem 0;
@@ -392,6 +408,7 @@ p{
     
 }
 .widget h3{
+
     
     color: var(--claro);
     padding: 2rem .5rem 2rem .5rem;
@@ -399,6 +416,7 @@ p{
     width: 100%;
     margin-top: -1.5rem;
     text-align: center;
+
 
 }
 
@@ -417,6 +435,7 @@ p{
 .campo input{
     padding: 1rem;
     border: none;
+
     border-radius: 20px;
     width: 100%;
     background-color: transparent;
@@ -425,6 +444,7 @@ p{
 
 
     
+
     
 
 }
@@ -432,6 +452,7 @@ p{
     resize: none;
     padding: 2rem;
     border: none;
+
     border-radius: 20px;
     width: 100%;
     padding: 1.5rem;
@@ -441,6 +462,7 @@ p{
     box-shadow: 0px 0px 5px var(--secundario);  
     transition: .5s ease-in-out; 
    
+
     
 }
 .boton{
@@ -492,8 +514,10 @@ p{
 }
 @media (min-width:768px){
     .footer{
+
         background-color: var(--primario);
         margin-top: 6rem;
+
     }
     .widget h3{
         width: 100%;
@@ -513,6 +537,7 @@ p{
         width: 50%;
     }
     .campo input{
+
       width: 100%;
       outline: none;
       padding: 1.5rem;
@@ -529,6 +554,7 @@ p{
     transform: scale(.85) translateY(-1.7rem) translateX(-4rem);
     transition: opacity .1s ease-in-out, transform .1s ease-in-out;
     
+
     }
     .campo .mensajito:focus::placeholder{
     
