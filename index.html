@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
-    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1|Oswald" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/style.css">
     
-    <title>Freelancer</title>
+    <title>Juan Jesús Portafolio</title>
 </head>
 <body class="fondo">
     <div class="hero" id="hero">
@@ -125,28 +125,27 @@
         <div class="contenedor" id="contacta">
             <form action="correo.php" method="post">
                 <div class="widget">
-                    <h3>Contacta conmigo</h3>
+                    <h3>Contacta conmigo<i class="fas fa-phone-alt"></i></h3>
+                    
+                    
                     <div class="campo">
-                        <label for="nombre">Tu nombre: </label>
-                        <input type="text" id="nombre" placeholder="Nombre" name="nombre" required>
+                        <input type="text" id="nombre" placeholder="Nombre" name="nombre" required autocomplete="off" >
     
                     </div>
                     <div class="campo">
-                        <label for="contact">Tu email: </label>
-                        <input type="email" id="contact" class="contacto" placeholder="Email" name="email" required>
+                        <input type="email" id="contact" class="contacto" placeholder="Email" name="email" autocomplete="off" required>
     
                     </div>
                     <div class="campo">
-                        <label for="">Asunto:</label>
-                        <input type="text" id="asunto" placeholder="Asunto" name="asunto" required>
+                        <input type="text" id="asunto" placeholder="Asunto" name="asunto" required autocomplete="off">
                     </div>
                     <div class="campo">
-                        <label for="mensaje">Mensaje:</label>
                         <textarea name="mensaje" id="mensaje" cols="30" rows="3" placeholder="Mensaje" class="mensajito"></textarea>
                     </div>
                     
+                    
+                    <input type="submit" value="Enviar datos" class="boton" name="submit">
                 </div>
-                <input type="submit" value="Enviar datos" class="boton" name="submit">
                 
 
             </form>
