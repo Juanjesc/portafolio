@@ -59,6 +59,12 @@ span{
     font-weight: bold;
     
 }
+.ola{
+    position: absolute;
+    bottom: 0;
+    width: 220%;
+}
+
 
 
 .contenido a{
@@ -126,6 +132,9 @@ span{
         color: var(--boton);
        
     
+    }
+    .ola{
+        width: 100%;
     }
     
 }
@@ -400,8 +409,8 @@ p{
     }
     
 }
-/*Footer (contacto) */
-.footer{
+/*Sección Formulario (contacto) */
+.contacto{
 
     background-color: var(--negro);
 
@@ -524,19 +533,19 @@ p{
     box-shadow: 0px 0px 30px var(--boton);   
 
 }
-.footer{
+.contacto{
 
     background-color: var(--primario);
     margin-top: 6rem;
     position: relative;
 
 }
-.footer img{
+.contacto img{
     display: none;
 }
 @media (min-width: 1500px){
 
-    .footer img{
+    .contacto img{
         position: absolute;
         width: 300px;
         height: 300px;
@@ -547,15 +556,13 @@ p{
         cursor: pointer;
         transition: .5s ease-in-out;
         display: block;
-        
-    
     }
-    .footer img:hover{
+    .contacto img:hover{
         filter: drop-shadow(0 0 50px var(--boton));
     }
 }
 @media (min-width:768px){
-    .footer{
+    .contacto{
         margin-top: 6rem;
     }
     .widget h3{
@@ -604,4 +611,32 @@ p{
 
     
 }
+/* Footer */
+
+footer{
+    background-color: var(--secundario);
+}
+.contenedor_footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--negro);
+    height: 8rem;
+    width: 50%;
+    
+
+}
+.contenedor_footer .fab{
+    color: var(--negro);
+}
+.contenedor_footer .boton{
+    color: var(--negro);
+}
+.contenedor_footer .boton:hover{
+    color: var(--claro);
+}
+
+
+
+
 
