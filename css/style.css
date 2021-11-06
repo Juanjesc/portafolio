@@ -61,9 +61,7 @@ span{
     
 }
 .ola{
-    position: absolute;
-    bottom: 0;
-    width: 220%;
+    display: none;
     
 }
 
@@ -138,6 +136,9 @@ span{
     }
     .ola{
         width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: block;
     }
     
 }
