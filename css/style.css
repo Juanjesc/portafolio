@@ -116,7 +116,50 @@ span{
 .fa-arrow-alt-circle-up{
     display: none;
 }
+.logotipo_cabecera{
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.logotipo_cabecera img{
+    max-width: 30%;
+    height: 30%;
+    align-self: center;
+    position: relative;
+    right: 3.5rem;
+    top: .4rem ;
+    transition: .5s ease-in;
+    
+    
+    
+    
+}
+.logotipo_cabecera img:hover{
+    transform: rotate(10deg);
+}
+
 @media (min-width: 768px) { 
+    /* lOGOTIPO CABECERA */
+    .logotipo_cabecera{
+        flex-direction: row;
+        width: 40%;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    .logotipo_cabecera img{
+        max-width: 20%;
+        height: 20%;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+    
     .fa-arrow-alt-circle-up{
         position: fixed;
         bottom: 0;
@@ -144,7 +187,7 @@ span{
 }
 
 .hero{
-    background-image: url(../img/lapiz_bueno3.png);
+    background-image: url(../img/lapiz_bueno4.png);
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center;
@@ -180,7 +223,7 @@ span{
     margin: 0;
     margin-bottom: 1rem;
     font-size: 2rem;
-    max-width: 60%;
+    max-width: 90%;
     color: var(--secundario);
 
 }
@@ -516,7 +559,7 @@ p{
     border: none;
    
     margin-top: 2rem;
-    padding: .6rem 2rem;
+    padding: 1rem 2rem;
     background-color: transparent;
     color: var(--secundario);
     text-transform: uppercase;
@@ -587,7 +630,7 @@ p{
         display: block;
     }
     .contacto img:hover{
-        filter: drop-shadow(0 0 50px var(--boton));
+        filter: drop-shadow(0 0 50px var(--boton)) !important;
     }
 }
 @media (min-width:768px){

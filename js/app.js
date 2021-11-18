@@ -34,5 +34,27 @@
 
 
 // });
+window.onload = function () {
+    
+    var boton_datos = document.querySelector("#boton_datos");
+   
+    boton_datos.onmouseover = cambiar_color;
+    boton_datos.onmouseleave = color_defecto;
+}
+function cambiar_color(){
+    
+    var imagen_formu = document.querySelector("#imagen_contacto");
+   
+    
+    imagen_formu.style.filter= "drop-shadow(0 0 50px var(--boton))";
+    
+}
+function color_defecto(){
+    var imagen_formu = document.querySelector("#imagen_contacto");
+    imagen_formu.style.filter="drop-shadow(0 0 50px var(--secundario))";
+    
+}
+
+
 
 
