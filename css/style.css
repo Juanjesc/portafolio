@@ -116,6 +116,7 @@ span{
 .fa-arrow-alt-circle-up{
     display: none;
 }
+
 @media (min-width: 768px) { 
     .fa-arrow-alt-circle-up{
         position: fixed;
@@ -144,7 +145,7 @@ span{
 }
 
 .hero{
-    background-image: url(../img/lapiz_bueno3.png);
+    background-image: url(../img/lapiz_bueno4.png);
     background-repeat: no-repeat;
     height: 100vh;
     background-position: center;
