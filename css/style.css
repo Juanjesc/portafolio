@@ -20,6 +20,7 @@ html{
 *:after,
 *:before {
   box-sizing: inherit;
+  
 }
 html,body{
     overflow-x: hidden !important;
@@ -71,7 +72,7 @@ span{
 .contenido a{
     display: block;
     font-size: 1.2rem;
-    padding: .5rem;
+    padding: .5rem 0;
     font-family: var(--fuentePrincipal);
     color: var(--oscuro);
     width: max-content;
@@ -82,12 +83,15 @@ span{
 }
 .contenido a:hover{
     cursor: pointer;
-    color: var(--secundario);
+    color: var(--secundario) !important;
     background-color: var(--primario);
-    font-weight: bold;
-    padding: 0.5rem 0.7rem;
+    font-weight: bold !important;
+    padding: 0.5rem !important;
     transform: rotate(-2deg);
 
+}
+.vacio{
+    display: none;
 }
 .fab{
     font-size: 3rem;
@@ -116,7 +120,7 @@ span{
 .fa-arrow-alt-circle-up{
     display: none;
 }
-.logotipo_cabecera{
+/* .logotipo_cabecera{
     margin-bottom: 0;
     display: flex;
     flex-direction: row-reverse;
@@ -125,8 +129,8 @@ span{
     padding: 0;
     margin: 0;
     
-}
-
+} */
+/* 
 .logotipo_cabecera img{
     max-width: 30%;
     height: 30%;
@@ -142,11 +146,11 @@ span{
 }
 .logotipo_cabecera img:hover{
     transform: rotate(10deg);
-}
+} */
 
 @media (min-width: 768px) { 
     /* lOGOTIPO CABECERA */
-    .logotipo_cabecera{
+    /* .logotipo_cabecera{
         flex-direction: row;
         width: 40%;
         margin-bottom: 2rem;
@@ -158,7 +162,7 @@ span{
         position: relative;
         right: 0;
         top: 0;
-    }
+    } */
     
     .fa-arrow-alt-circle-up{
         position: fixed;
@@ -194,12 +198,6 @@ span{
     transition: all 2s ease-in-out;
     background-position-x: -640px;
    
-    
-    
-    
-    
-    
-   
 }
 
 
@@ -223,7 +221,7 @@ span{
     margin: 0;
     margin-bottom: 1rem;
     font-size: 2rem;
-    max-width: 90%;
+    max-width: 70%;
     color: var(--secundario);
 
 }
@@ -231,6 +229,9 @@ span{
     font-size: 1.5rem;
     max-width: 60%;
 
+}
+#barra_nav{
+    margin-top: 0 ;
 }
 @media (min-width: 768px) {
 
@@ -252,10 +253,18 @@ span{
     }
     .hero .contenido{
         margin-top: 10rem;
+        padding: 0;
     }
     .contenido a{
         font-size: 1.6rem;
         font-weight: 300;
+        padding: .5rem .7rem;
+        
+        
+       
+    }
+    #barra_nav{
+        margin-top: 2rem;
     }
     
     
