@@ -44,13 +44,14 @@ window.addEventListener('scroll', ()=>{
         navegador.style.margin=0;
         for (let i = 0; i<texto_nav.length;i++){
             
-            texto_nav[i].style.fontWeight='300';
+            texto_nav[i].style.fontWeight='400';
             texto_nav[i].style.color='var(--parrafos)';
             
+            
+            
+            
         }
-        // if (window.innerWidth < 510){
-        //     navegador.className="vacio";
-        // }
+        
         
         
         
@@ -69,7 +70,7 @@ window.addEventListener('scroll', ()=>{
         
         for (let i = 0; i<texto_nav.length;i++){
             
-            texto_nav[i].style.fontWeight='300';
+            texto_nav[i].style.fontWeight='400';
             texto_nav[i].style.color='var(--oscuro)'
         }
         if (window.innerWidth < 510){

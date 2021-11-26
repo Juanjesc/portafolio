@@ -25,6 +25,7 @@ html{
 html,body{
     overflow-x: hidden !important;
    
+   
 }
 body{
     font-family: var(--fuenteSecundaria);
@@ -68,28 +69,6 @@ span{
 
 
 
-
-.contenido a{
-    display: block;
-    font-size: 1.2rem;
-    padding: .5rem 0;
-    font-family: var(--fuentePrincipal);
-    color: var(--oscuro);
-    width: max-content;
-    border-radius: 20px;
-    font-weight: 400;
-    transition: .2s ease;
-   
-}
-.contenido a:hover{
-    cursor: pointer;
-    color: var(--secundario) !important;
-    background-color: var(--primario);
-    font-weight: bold !important;
-    padding: 0.5rem !important;
-    transform: rotate(-2deg);
-
-}
 .vacio{
     display: none;
 }
@@ -100,7 +79,7 @@ span{
     color: var(--secundario);
     font-size: 3rem;
     margin-top: 1rem;
-
+    
 }
 .far{
     color: var(--secundario);
@@ -113,8 +92,8 @@ span{
     font-size: 2rem;
     cursor: pointer;
     color: var(--boton);
-   
-
+    
+    
 }
 
 .fa-arrow-alt-circle-up{
@@ -178,8 +157,8 @@ span{
         font-size: 2rem;
         cursor: pointer;
         color: var(--boton);
-       
-    
+        
+        
     }
     .ola{
         width: 100%;
@@ -197,7 +176,7 @@ span{
     background-position: center;
     transition: all 2s ease-in-out;
     background-position-x: -640px;
-   
+    
 }
 
 
@@ -211,10 +190,10 @@ span{
     
     color: var(--oscuro);
     margin-top: 3rem;
-    padding-left: .4rem;
     
     
-
+    
+    
 }
 
 .titulo{
@@ -223,23 +202,45 @@ span{
     font-size: 2rem;
     max-width: 70%;
     color: var(--secundario);
-
+    
 }
 .subtitulo{
     font-size: 1.5rem;
     max-width: 60%;
-
+    
 }
 #barra_nav{
     margin-top: 0 ;
 }
-@media (min-width: 768px) {
 
+.contenido a{
+    display: block;
+    font-size: 1.2rem;
+    padding: .8rem;
+    font-family: var(--fuentePrincipal);
+    color: var(--oscuro);
+    width: max-content;
+    border-radius: 20px;
+    font-weight: 400;
+    transition: .2s ease;
+   
+}
+.contenido a:hover{
+    cursor: pointer;
+    color: var(--secundario) !important;
+    background-color: var(--primario);
+    
+    padding: .8rem !important;
+    transform: rotate(-2deg);
+
+}
+@media (min-width: 768px) {
+    
     .titulo{
         
         font-size: 3rem;
         
-
+        
     }
     .subtitulo{
         font-size: 2rem;
@@ -257,12 +258,16 @@ span{
     }
     .contenido a{
         font-size: 1.6rem;
-        font-weight: 300;
-        padding: .5rem .7rem;
+        padding: .8rem;
         
         
        
     }
+    .contenido a:hover{
+        font-weight: 900 !important; /*Produce el fallo! */
+        
+    }
+ 
     #barra_nav{
         margin-top: 2rem;
     }
