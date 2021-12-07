@@ -70,7 +70,7 @@ span{
 
 
 .vacio{
-    display: none;
+    display: none !important;
 }
 .fab{
     font-size: 3rem;
@@ -196,6 +196,7 @@ span{
     
 }
 
+
 .titulo{
     margin: 0;
     margin-bottom: 1rem;
@@ -274,6 +275,7 @@ span{
     
     
 }
+
 /*Apartado de servicios */
 p{
     line-height:2rem;
@@ -368,6 +370,7 @@ p{
         margin: 0 auto;
         color: var(--parrafos);
         text-align: center;
+     
     }
     
     
@@ -751,12 +754,17 @@ footer{
     margin: 0;
     padding: 1rem;
 }
-
+footer{
+    display: flex;
+    justify-content: center;
+}
 @media (min-width: 768px) { 
+    
     .contenedor_footer{
-        width: 80%;
+        width: 40%;
         padding: 2rem;
         flex-direction: row;
+        
        
         
         

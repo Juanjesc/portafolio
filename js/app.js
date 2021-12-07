@@ -25,6 +25,8 @@ window.addEventListener('scroll', ()=>{
     var navegador = document.getElementById('barra_nav');
     var scroll = window.scrollY;
     var texto_nav = document.querySelectorAll("#barra_nav a");
+    //var flechita = document.querySelector(".fa-arrow-alt-circle-up");
+
     
     
     if(scroll>500){
@@ -34,7 +36,7 @@ window.addEventListener('scroll', ()=>{
         navegador.style.justifyContent = 'space-around'
         navegador.style.width = "100%";
         navegador.style.backgroundColor = 'var(--negro)'
-        navegador.style.color = '#fff'
+       
         navegador.style.zIndex = '99999';
         
         navegador.style.transition = '1s ease-in';
@@ -42,6 +44,7 @@ window.addEventListener('scroll', ()=>{
         navegador.style.padding= .8+"rem";
         navegador.style.boxShadow='0 5px 10px var(--secundario)';
         navegador.style.margin=0;
+       
         for (let i = 0; i<texto_nav.length;i++){
             
             texto_nav[i].style.fontWeight='400';
@@ -51,6 +54,12 @@ window.addEventListener('scroll', ()=>{
             
             
         }
+        if (window.innerWidth < 510){
+            console.log("Estoy entrando aquí");
+            navegador.className=("vacio");
+        }
+        
+        
         
         
         
@@ -67,6 +76,8 @@ window.addEventListener('scroll', ()=>{
         navegador.style.backgroundColor = 'transparent'
         navegador.style.zIndex = '99999';
         navegador.style.boxShadow='none';
+        navegador.classList.remove("vacio");
+      
         
         for (let i = 0; i<texto_nav.length;i++){
             
