@@ -1,9 +1,16 @@
 window.onload = function () {
     
-    var boton_datos = document.querySelector("#boton_datos");
+    var boton_datos = document.getElementById('boton_datos');
     
     boton_datos.onmouseover = cambiar_color;
     boton_datos.onmouseleave = color_defecto;
+    boton_datos.onclick=function (e) {
+        e.preventDefault();
+        validar();
+    }
+
+    var iconQuestion = document.querySelectorAll(".fa-question");
+    iconQuestion[0].title ="El nombre debe contener mínimo 3 caracteres, no debe contener números, y no debe estar vacío";
 }
 
 
@@ -59,11 +66,7 @@ window.addEventListener('scroll', ()=>{
             navegador.className=("vacio");
         }
         
-        
-        
-        
-        
-        
+  
     }
     else{
         navegador.style.position ='relative'
@@ -96,7 +99,58 @@ window.addEventListener('scroll', ()=>{
     
     
     
-}); //evenListener scroll
+}); 
+
+//validación formulario
+
+function validar() {
+
+    var formu = document.forms[0];
+    var c_nombre= formu.nombre;
+    var c_email= formu.email;
+    var c_asunto = formu.asunto;
+
+    c_nombre.className="";
+    var iconQuestion=document.querySelectorAll(".fa-question");
+    for(let i = 0; i<iconQuestion.length;i++){
+        iconQuestion[i].style.display="none";
+    }
+    if (c_nombre.value == ""||c_nombre.value.length<3){
+        
+        c_nombre.focus();
+        c_nombre.classList.toggle("campoError");
+        document.querySelectorAll(".fa-question")[0].style.display="block";
+        c_nombre.addEventListener("change", function(){
+            c_nombre.className="";
+        })
+
+        if(c_nombre.value == ""){
+            alert("ei pon un nombre crack ");
+        }
+        else if(c_nombre.value.length<4){
+            alert("El nombre debe tener al menos 3 caracteres");
+        }   
+        return;
+    }
+    else{
+        c_nombre.className="";  
+    }
+    if (c_email.value == ""){
+        alert("ei pon un correo crack");
+        c_email.focus();
+        c_email.classList.toggle("campoError");
+        
+
+        return;
+
+    }
+    else{
+        c_email.classList.toggle("");  
+    }
+}
+
+
+//evenListener scroll
 
 // window.addEventListener('resize', ()=>{
 //     console.log(innerWidth);
