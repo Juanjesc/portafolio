@@ -162,6 +162,11 @@ function validar() {
         }
         else if(c_nombre.value.length<4){
             var text_name_length = document.createTextNode("El nombre debe contener más de 3 letras");
+            if (window.innerWidth < 400){
+               
+                info_error.style.lineHeight=1.3;
+                info_error.style.textAlign="center";
+            }
             info_error.appendChild(text_name_length);
            
            
