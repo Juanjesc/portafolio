@@ -42,7 +42,7 @@ window.addEventListener('scroll', ()=>{
     //var flechita = document.querySelector(".fa-arrow-alt-circle-up");
 
     
-    if(scroll>500){
+    if(scroll>700){
         navegador.className="boxi";
         navegador.style.position ='fixed'
         navegador.style.top = '0';
@@ -53,7 +53,7 @@ window.addEventListener('scroll', ()=>{
        
         navegador.style.zIndex = '99999';
         
-        navegador.style.transition = '1s ease-in';
+        navegador.style.transition = '.5s ease-in-out';
         navegador.style.left='0';
         navegador.style.padding= .5+"rem";
         navegador.style.boxShadow='0 5px 10px var(--secundario)';
@@ -61,11 +61,8 @@ window.addEventListener('scroll', ()=>{
        
         for (let i = 0; i<texto_nav.length;i++){
             
-            texto_nav[i].style.fontWeight='400';
-            texto_nav[i].style.color='var(--parrafos)';
-            
-            
-            
+            texto_nav[i].style.fontWeight='bold';
+            texto_nav[i].style.color='var(--claro)';
             
         }
         if (window.innerWidth < 510){

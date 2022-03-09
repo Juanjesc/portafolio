@@ -251,7 +251,7 @@ span{
         box-shadow: 0 5px 10px var(--boton);
     }
     to{
-        box-shadow: 0 5px 10px var(--naranja);
+        box-shadow: 0 5px 10px var(--secundario);
     }
 
 }
@@ -266,7 +266,7 @@ span{
         box-shadow: 0px -40px 70px var(--boton);
     }
     to{
-        box-shadow: 0px -40px 70px var(--naranja);
+        box-shadow: 0px -40px 70px var(--secundario);
     }
 
 }
@@ -452,6 +452,8 @@ p{
 .portafolio{
     
     background-color: var(--primario);
+    
+
 }
 .carousel-item{
     padding: 1rem;
