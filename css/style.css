@@ -318,8 +318,6 @@ span{
         font-size: 1.6rem;
         padding: .8rem;
         
-        
-       
     }
     .contenido a:hover{
         font-weight: 900 !important; /*Produce el fallo! */
@@ -452,13 +450,13 @@ p{
 .portafolio{
     
     background-color: var(--primario);
-    
-
-}
-.carousel-item{
-    padding: 1rem;
+    padding-bottom: 4rem;
 }
 
+.cards_wrapper{
+   width: 90%;
+   margin: 0 auto;
+}
 .title-portafolio{
     text-align: center;
     color: var(--claro);
@@ -469,6 +467,7 @@ p{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 } */
+
 .tarjeta{
     
     margin-bottom: 4rem;
@@ -477,9 +476,7 @@ p{
     transition: .6s ease-in-out;
     display: flex;
     flex-direction: column;
-    
-    
-    
+    position: relative;
 }
 .tarjeta:hover{
     transform: scale(1.05);
@@ -502,9 +499,7 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-   
-    
+
 }
 
 .tarjeta .info p{
@@ -527,7 +522,64 @@ p{
 .espacios .fas:hover{
     transform: rotate(360deg);
 }
+.owl-prev, .owl-next{
+    margin-right: 0;
+    display: flex;
+    background-color: var(--negro);
+    border: 2px solid var(--secundario);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease-in;
+}
+i{
+    color: var(--secundario);
+    font-size: 20px;
+}
+i:hover{
+    color: var(--boton);
+}
+.owl-next:hover, .owl-prev:hover{
+    background-color: var(--primario);
+    border-color: var(--boton);
+}
 
+.owl-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -8px;
+}
+.owl-prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -9px;
+}
+.owl-stage-outer{
+    padding-top: 2rem;
+}
+.owl-dots{
+            
+    display: inline-flex;
+    position: absolute;
+    left: 20px;
+
+
+}
+.owl-dot{
+    width: 40px;
+    height: 7px;
+    background-color: var(--secundario);
+    opacity: .5;
+    margin-right: 8px;
+    
+}
+.owl-dots .active{
+    opacity: 1;
+}
 @media (min-width:768px){
     /* .listado{
         display: grid;
@@ -537,23 +589,44 @@ p{
         /*max content hace que cada row se adapte
         al tamaño que tenga por default 
     } */
+    
     .portafolio{
-        width: 80%;
-
+        width: 75%;
         margin: 0 auto 2rem;
         border-radius: 20px;
+        padding:0 5rem 4rem 5rem;
         
-
+    }
+    .cards_wrapper{
+        width: 100%;
         
-
-       
+    }
+    .owl-dots{
+        bottom: -20px;
+    }
+    .cards_wrapper:hover .owl-next{
+        right: -55px;
+    }
+    .cards_wrapper:hover .owl-prev{
+        left: -63px;
     }
     .tarjeta{
-        width: 26%;
+        width: 380px;
         margin: 0 auto;
         margin-bottom: 2rem;
-        
     }
+    .owl-prev, .owl-next{
+        width: 67px;
+        height: 67px;
+    }
+    .owl-prev i, .owl-next i{
+        font-size: 46px;
+    }
+    .owl-dots{
+        left: 46.5%;
+    }
+
+
     .espacios{
         display: none;
     }
