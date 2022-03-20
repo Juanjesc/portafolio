@@ -581,15 +581,7 @@ i:hover{
     opacity: 1;
 }
 @media (min-width:768px){
-    /* .listado{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        column-gap: 2rem;
-        grid-auto-rows: max-content; 
-        /*max content hace que cada row se adapte
-        al tamaño que tenga por default 
-    } */
-    
+   
     .portafolio{
         width: 75%;
         margin: 0 auto 2rem;
