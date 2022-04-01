@@ -8,6 +8,7 @@ window.onload = function () {
             navText: ['<i class="fa-solid fa-caret-left"></i>', '<i class="fa-solid fa-caret-right"></i>'],
             dots: true,
             autoplay:true,
+            autoplayHoverPause: true,
             responsive: {
                 0: {
                    items: 1, 
@@ -15,7 +16,7 @@ window.onload = function () {
                    dotsEach: 2
                 }, 
                 768:{
-                    items:2,
+                    items:1,
                     margin: 10
                    
                 },
