@@ -566,8 +566,6 @@ i:hover{
     display: inline-flex;
     position: absolute;
     left: 20px;
-
-
 }
 .owl-dot{
     width: 40px;
@@ -575,7 +573,6 @@ i:hover{
     background-color: var(--secundario);
     opacity: .5;
     margin-right: 8px;
-    
 }
 .owl-dots .active{
     opacity: 1;
@@ -593,19 +590,17 @@ i:hover{
         width: 100%;
         
     }
-    .owl-dots{
-        bottom: -20px;
+    .tarjeta{
+        width: 380px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
     }
+   
     .cards_wrapper:hover .owl-next{
         right: -55px;
     }
     .cards_wrapper:hover .owl-prev{
         left: -63px;
-    }
-    .tarjeta{
-        width: 380px;
-        margin: 0 auto;
-        margin-bottom: 2rem;
     }
     .owl-prev, .owl-next{
         width: 67px;
@@ -616,6 +611,7 @@ i:hover{
     }
     .owl-dots{
         left: 46.5%;
+        bottom: -20px;
     }
 
 
