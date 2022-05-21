@@ -85,13 +85,13 @@ span{
 }
 /* Captchat */
 .rc-anchor-light{
-    background-color: transparent;
-    color: var(--parrafos);
-    border-radius: 20px;
+    background-color: transparent !important;
+    color: var(--parrafos) !important;
+    border-radius: 20px !important;
 }
 .rc-anchor-light.rc-anchor-normal{
-    border: none;
-    box-shadow: 0px 0px 5px var(--secundario);
+    border: none !important;
+    box-shadow: 0px 0px 5px var(--secundario) !important;
 }
 .campo:last-of-type{
     justify-content: center;
@@ -710,8 +710,6 @@ i:hover{
 }
 .boton{
     border: none;
-   
-    margin-top: 2rem;
     padding: 1rem 2rem;
     background-color: transparent;
     color: var(--secundario);
@@ -788,7 +786,7 @@ i:hover{
         width: 300px;
         height: 300px;
         left: 8rem;
-        bottom: 13rem;
+        bottom: 20rem;
         transform: rotate(-10deg);
         filter: drop-shadow(0 0 50px var(--secundario));
         cursor: pointer;
