@@ -39,7 +39,7 @@ window.addEventListener('scroll', ()=>{
     var navegador = document.getElementById('barra_nav');
     var scroll = window.scrollY;
     var texto_nav = document.querySelectorAll("#barra_nav a");
-    //var flechita = document.querySelector(".fa-arrow-alt-circle-up");
+    var flechita = document.querySelector(".fa-arrow-alt-circle-up");
 
     
     if(scroll>700){
@@ -58,15 +58,18 @@ window.addEventListener('scroll', ()=>{
         navegador.style.padding= .5+"rem";
         navegador.style.boxShadow='0 5px 10px var(--secundario)';
         navegador.style.margin=0;
+        
+        flechita.style.display='block';
+
        
         for (let i = 0; i<texto_nav.length;i++){
             
             texto_nav[i].style.fontWeight='bold';
             texto_nav[i].style.color='var(--claro)';
+
             
         }
         if (window.innerWidth < 510){
-            console.log("Estoy entrando aquí");
             navegador.className=("vacio");
         }
         
@@ -85,6 +88,7 @@ window.addEventListener('scroll', ()=>{
         navegador.style.zIndex = '99999';
         navegador.style.boxShadow='none';
         navegador.classList.remove("vacio");
+        flechita.style.display='none';
       
         
         for (let i = 0; i<texto_nav.length;i++){

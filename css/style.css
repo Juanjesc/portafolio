@@ -117,13 +117,10 @@ span{
     margin-top: 1rem;
 }
 
-.fa-envelope{
-    
+.fa-envelope{  
     font-size: 2rem;
     cursor: pointer;
-    color: var(--boton);
-    
-    
+    color: var(--boton);  
 }
 
 .fa-arrow-alt-circle-up{
@@ -189,7 +186,6 @@ span{
         right: 0;
         padding: 1rem 2rem;
         color: var(--secundario);
-        display: block;
         z-index: 99999;
     }
     .fa-envelope{
