@@ -83,6 +83,19 @@ span{
     display: none;
     
 }
+/* Captchat */
+.rc-anchor-light{
+    background-color: transparent;
+    color: var(--parrafos);
+    border-radius: 20px;
+}
+.rc-anchor-light.rc-anchor-normal{
+    border: none;
+    box-shadow: 0px 0px 5px var(--secundario);
+}
+.campo:last-of-type{
+    justify-content: center;
+}
 
 
 
