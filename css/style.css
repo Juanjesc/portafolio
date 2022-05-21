@@ -12,6 +12,7 @@
     --azulito: #44b3c2;
     --boton: #7f5af0;
     --error: #b80000;
+    --sass: #D35A96;
     
     
 }
@@ -64,13 +65,19 @@ h3{
     color: var(--secundario);
 }
 a{
-  text-decoration: none;
+    text-decoration: none;
   color: var(--oscuro);
 }
 span{
     color: var(--secundario);
     font-weight: bold;
     
+}
+.sass-color{
+    color: var(--sass);
+}
+.react-color{
+    color: #5ED3F3;
 }
 .ola{
     display: none;
@@ -358,9 +365,6 @@ p{
     margin-top: 2rem;
 
 }
-.servicio p span{
-    color: #5ED3F3;
-}
 .servicio p:last-child{
     padding-bottom: 2rem;
 }
@@ -442,6 +446,7 @@ p{
     
 }
 /* Portafolio*/
+
 .elemento{
     border-bottom: 1px solid var(--oscuro);
     margin-bottom: 3rem;
