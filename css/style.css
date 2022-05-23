@@ -906,12 +906,13 @@ footer{
     padding: 1rem;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 1100px) { 
     
     .contenedor_footer{
         padding: 2rem;
         flex-direction: row;
         justify-content: center;
+        width: 60%;
         
         
        
