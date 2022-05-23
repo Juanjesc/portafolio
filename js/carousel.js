@@ -15,12 +15,12 @@ $(function () {
                 margin: 10,
                 dotsEach: 2
             }, 
-            768:{
+            1220:{
                 items:2,
                 margin: 10
                 
             },
-            1500: {
+            1800: {
                 items: 3,
                 margin: 1
             }  

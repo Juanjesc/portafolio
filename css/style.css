@@ -192,18 +192,16 @@ span{
         padding-left: 2rem;
         font-size: 2rem;
         cursor: pointer;
-        color: var(--boton);
-        
-        
-    }
+        color: var(--boton);   
+    } 
+}
+@media (min-width: 1000px) { 
     .ola{
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: -20px;
         display: block;
     }
-    
-    
 }
 
 .hero{
@@ -255,6 +253,7 @@ span{
 }
 .boxi2{
     animation: boxi2 10s ease-in-out 0s infinite alternate-reverse;
+
 }
 @keyframes boxi {
     from{
@@ -491,6 +490,13 @@ p{
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 380px;
+    margin: 0 auto;
+}
+@media (max-width: 500px) { 
+    .tarjeta{
+        width: 100%;
+    }
 }
 .tarjeta:hover{
     transform: scale(1.05);
@@ -903,9 +909,10 @@ footer{
 @media (min-width: 768px) { 
     
     .contenedor_footer{
-        width: 40%;
         padding: 2rem;
         flex-direction: row;
+        justify-content: center;
+        
         
        
         
