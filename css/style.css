@@ -13,6 +13,8 @@
     --boton: #7f5af0;
     --error: #b80000;
     --sass: #D35A96;
+    --js: #EFD81D;
+    --php: #858EBB;
     
     
 }
@@ -78,6 +80,12 @@ span{
 }
 .react-color{
     color: #5ED3F3;
+}
+.js-color{
+    color: var(--js);
+}
+.php-color{
+    color: var(--php);
 }
 .ola{
     display: none;
