@@ -2,6 +2,7 @@
 
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteSecundaria: 'Oswald', sans-serif;
+    --fuenteTerciaria: 'Montserrat', sans-serif;
     --primario: #16161a;
     --secundario: #2cb67d;
     --claro: #fffffe;
@@ -943,6 +944,183 @@ footer{
     }
     
 }
+
+
+.cards_wrapper .card {
+    width: 360px;
+    height: 544px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  
+}
+@media (max-width: 500px) { 
+    .cards_wrapper .card{
+        width: 300px;
+    }
+}
+
+.cards_wrapper .card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: var(--negro);
+    transition: all .5s ease;
+    z-index: 100;
+    
+  }
+
+.cards_wrapper .card:hover .content-wrapper {
+    bottom: 75%;
+  }
+
+.cards_wrapper .card:hover .content-wrapper-hover {
+    opacity: 1;
+  }
+
+.cards_wrapper .card:hover::after {
+    opacity: .9;
+  }
+
+.cards_wrapper .card .picture-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-position: center;
+  }
+
+.cards_wrapper .card .picture-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    background: transparent linear-gradient(180deg, #FFFFFF00 0%, #000000 100%);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+  }
+
+.cards_wrapper .card .picture-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.cards_wrapper .card .content-wrapper {
+    position: absolute;
+    color: white;
+    bottom: 2rem;
+    left: 40px;
+    transition: bottom .3s ease-in;
+  }
+
+.cards_wrapper .card .content-wrapper h4 {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    font-family: var(--fuentePrincipal);
+    position: relative;
+    z-index: 999;
+    text-shadow: 2px 2px 10px var(--primario);
+    
+  }
+
+.cards_wrapper .card .content-wrapper-hover {
+    position: relative;
+    left: 40px;
+    height: 100%;
+    z-index: 102;
+    opacity: 0;
+    transition: opacity .5s ease-in;
+  }
+
+.cards_wrapper .card .content-wrapper-hover .content-text-hover {
+    margin: 0;
+    width: 287px;
+    position: absolute;
+    top: 30%;
+  
+  }
+
+.cards_wrapper .card .content-wrapper-hover .content-text-hover p {
+    font-size: 18px;
+    font-family: var(--fuentePrincipal);
+    line-height: 30px;
+    text-align: left;
+    color: white;
+    font-weight: 400;
+  }
+
+.cards_wrapper .card .content-wrapper-hover .content-btn-hover {
+    position: absolute;
+    bottom: 40px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    left: -15px;
+    width: 100%;
+    
+}
+.cards_wrapper .card .content-wrapper-hover .content-btn-hover i{
+    margin-left: .5rem;
+}
+
+.cards_wrapper .card .content-wrapper-hover .content-btn-hover a:hover {
+    background-color: var(--primario);
+    border: 1px solid #00BCD0;
+  }
+
+.cards_wrapper .card .content-wrapper-hover .content-btn-hover a:hover {
+    color: #00BCD0;
+    
+  }
+
+.cards_wrapper .card .content-wrapper-hover .content-btn-hover a:hover i {
+    color: #00BCD0;
+  }
+
+.cards_wrapper .card .content-wrapper-hover .content-btn-hover a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.32px;
+    line-height: 27px;
+    font-family:var(--fuentePrincipal);
+    font-weight: 400;
+    border: 1px solid white;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+}
+
+.cards_wrapper .card .content-wrapper-hover .content-btn-hover i {
+    color: white;
+}
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
+    display: block;
+}
+@media (max-width: 500px) { 
+    .cards_wrapper .card .content-wrapper-hover .content-btn-hover {
+
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: max-content;
+    
+    }
+    .cards_wrapper .card .content-wrapper-hover .content-btn-hover a {
+        width: 100%
+    }
+    .cards_wrapper .card .content-wrapper-hover .content-text-hover p{
+        width: 80%;
+    }
+}
+
 
 
 

@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
@@ -31,10 +34,10 @@
                 <p class="subtitulo">Front-end Developer</p> 
                 <div id="barra_nav">
 
-                    <a href="#about-me">Sobre mí </a>
+                    <a href="#about-me">About me </a>
                     <a href="#servicios">Skills</a>
-                    <a href="#portafolio">Portafolio</a>
-                    <a href="#contacta">Contacta conmigo</a>
+                    <a href="#portafolio">Portfolio</a>
+                    <a href="#contacta">Contact to me</a>
 
                 </div>
                 
@@ -83,54 +86,89 @@
         <section class="section-port" id="portafolio">
             <div class="portafolio" data-aos="fade-left">
 
-                <h2 class="title-portafolio">Mis proyectos/ maquetas</h2>
+                <h2 class="title-portafolio">My projects</h2>
                 <!-- INTENTO DE CARRUSEL -->
                 <div class="cards_wrapper owl-carousel">
 
-                    <div class="tarjeta">
-                        <a href="https://juanjesc.github.io/tiendaMuebles/index.html"><img src="img/tiendamuebles.PNG" alt="fotillo1"></a>
-                        <div class="info">
-                            <h2>Tienda Muebles</h2>
-                            <p>Proyecto desde 0 practicando las bases de CSS Grid y Flexbox. Uso de formularios y algunas animaciones.
-                            Totalmente Responsive.
-                            </p>
-    
+                    <div class="card">
+                        <div class="picture-wrapper">
+                            <img src="img/cafete_img.PNG" alt="LaCafeteria"></a>
                         </div>
-                    </div> <!-- cierre de card -->
-                
-                
-                    <div class="tarjeta">
-                        <a href=" https://juanjesc.github.io/MaquetaMasonrylayout/"><img src="img/masonryL.PNG" alt="fotillo2"></a>
-                        <div class="info">
-                            <h2>Mansory Layout</h2>
-                            <p>Proyecto desde 0 hecho solamente con Flexbox en el que practico el llamado Mansory Layout, famoso por ser usado en sitios como Pinterest. Totalmente Responsive.
-                            </p>
-    
+                        <div class="content-wrapper">
+                            <h4>La Cafetería</h4>
                         </div>
-                    </div> <!-- cierre de card -->
-                
-                
-                    <div class="tarjeta">
-                        <a href="https://juanjesc.github.io/airbnbgrid/"><img src="img/replicaairbnb.PNG" alt="fotillo2"></a>
-                        <div class="info">
-                            <h2>Maqueta AirBnB</h2>
-                            <p>Proyecto desde 0 practicando las bases de CSS Grid y Flexbox. Contiene animaciones.
-                            Totalmente Responsive.
-                            </p>
-    
+                        <div class="content-wrapper-hover">
+                            <div class="content-text-hover">
+                                <p>
+                                    Project made from 0 using the <span class="sass-color">Sass</span> precompiler together with gulp, I recommend to see how the project is organized in github, fully responsive demo.
+                                </p>
+                                
+                            </div>
+                            <div class="content-btn-hover">
+                                <a href="https://github.com/Juanjesc/cafeteria">See in GitHub<i class="fa fa-chevron-right"></i></a>
+                                <a href="https://juanjesc.github.io/cafeteria/">See Demo <i class="fa fa-chevron-right"></i></a>
+                            </div>
                         </div>
-                    </div> <!-- cierre de card -->
+                    </div>
+
+                
+                
+                    <div class="card">
+                        <div class="picture-wrapper">
+                            <img src="img/replicaairbnb.PNG" alt="airbnb"></a>
+                        </div>
+                        <div class="content-wrapper">
+                            <h4>Air BnB Demo </h4>
+                        </div>
+                        <div class="content-wrapper-hover">
+                            <div class="content-text-hover">
+                                <p>
+
+                                    Mockup made from 0 applying <span>FlexBox</span> and some <span class="js-color">JavaScript</span> for the slider image change, responsive design. 
+                                </p>
+                            </div>
+                            <div class="content-btn-hover">
+                                <a href="https://github.com/Juanjesc/airbnbgrid">See in GitHub<i class="fa fa-chevron-right"></i></a>
+                                <a href="https://juanjesc.github.io/cafeteria/">See Demo <i class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
             
                 
-                    <div class="tarjeta">
-                        <a href="https://juanjesc.github.io/cafeteria/"><img src="img/cafete_img.PNG" alt="foto_cafetería"></a>
-                        <div class="info">
-                            <h2>Maqueta - La Cafetería</h2>
-                            <p>Proyecto desde 0 hecho con Sass y Gulp. Uso de CSS Grid, FlexBox, y más. Totalmente Responsive.
-                            </p>
-    
+                    <div class="card">
+                        <div class="picture-wrapper">
+                            <img src="img/tiendamuebles.PNG" alt="tiendaMuebles"></a>
                         </div>
-                    </div> <!-- cierre de card -->
+                        <div class="content-wrapper">
+                            <h4>Tienda Muebles</h4>
+                        </div>
+                        <div class="content-wrapper-hover">
+                            <div class="content-text-hover">
+                                <p>Project only made with CSS and HTML, implementing <span>FlexBox & CSS Grid</span>, responsive design. Includes Galleries, Navigation, Forms ...</p>
+                            </div>
+                            <div class="content-btn-hover">
+                                <a href="https://github.com/Juanjesc/tiendaMuebles">See in GitHub<i class="fa fa-chevron-right"></i></a>
+                                <a href="https://juanjesc.github.io/tiendaMuebles/">See Demo <i class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="picture-wrapper">
+                            <img src="img/rickapp.PNG" alt="rickapp"></a>
+                        </div>
+                        <div class="content-wrapper">
+                            <h4>Rick & Morty - Api</h4>
+                        </div>
+                        <div class="content-wrapper-hover">
+                            <div class="content-text-hover">
+                                <p>First project with <span class="react-color">React</span> ^^ made from 0 using create-react-app, reads information from an api. I make use of Hooks like {useState}</p>
+                            </div>
+                            <div class="content-btn-hover">
+                                <a href="https://github.com/Juanjesc/api_rick-morty_react">See in GitHub<i class="fa fa-chevron-right"></i></a>
+                                <a href="https://aplireactrickymorty.netlify.app/">See Demo <i class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div> <!-- cierre div portafolio -->
         </section> <!-- cierre section portafolio -->
@@ -147,11 +185,11 @@
                     <input type="hidden" name="subject" 
                     value="Mensaje desde el portfolio juanjesc.dev" />
                     <div class="widget">
-                        <h3>Contacta conmigo<i class="fas fa-envelope"></i></h3>
+                        <h3>Contact to me<i class="fas fa-envelope"></i></h3>
                         
                         <div class="campo">
                             
-                            <input type="text" id="nombre" placeholder="Nombre *" name="nombre"autocomplete="off" >
+                            <input type="text" id="nombre" placeholder="Name *" name="nombre"autocomplete="off" >
                             <i class="fas fa-question"></i>
                             
                         </div>
@@ -162,11 +200,11 @@
                             
                         </div>
                         <div class="campo">
-                            <input type="text" id="asunto" placeholder="Asunto" name="asunto" autocomplete="off">
+                            <input type="text" id="asunto" placeholder="Subject" name="asunto" autocomplete="off">
                             <i class="fas fa-question"></i>
                         </div>
                         <div class="campo">
-                            <textarea name="mensaje" id="mensaje" placeholder="Mensaje *" class="mensajito"></textarea>
+                            <textarea name="mensaje" id="mensaje" placeholder="Message *" class="mensajito"></textarea>
                             <i class="fas fa-question"></i>
                         </div>
 
@@ -174,7 +212,7 @@
                             <div data-netlify-recaptcha="true"></div>
                         </div>
                     
-                        <input type="submit" value="Enviar datos" class="boton" name="envio" id="boton_submit">
+                        <input type="submit" value="Send" class="boton" name="envio" id="boton_submit">
                     </div>
                     
                     
@@ -202,7 +240,7 @@
         AOS.init({
             duration: 1500, //duración de la animación
             offset: 250, // el punto en el que se ejecuta la animación (se mide en px).
-           // once: true //por defecto es false, solo hace las animaciones 1 vez.
+            once: true //por defecto es false, solo hace las animaciones 1 vez.
         });
     </script>
 </body>
