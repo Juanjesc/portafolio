@@ -28,17 +28,14 @@ html{
   box-sizing: inherit;
   
 }
-html,body{
-    overflow-x: hidden !important;
-   
-   
-}
 body{
     font-family: var(--fuenteSecundaria);
     background-color: var(--negro);
+    
 
     
 }
+
 .contenedor{
     max-width: 1400px;
     width: 90%;
@@ -93,15 +90,6 @@ span{
     
 }
 /* Captchat */
-.rc-anchor-light{
-    background-color: transparent !important;
-    color: var(--parrafos) !important;
-    border-radius: 20px !important;
-}
-.rc-anchor-light.rc-anchor-normal{
-    border: none !important;
-    box-shadow: 0px 0px 5px var(--secundario) !important;
-}
 .campo:last-of-type{
     justify-content: center;
 }
@@ -221,6 +209,19 @@ span{
     transition: all 2s ease-in-out;
     background-position-x: -640px;
     
+}
+@media (orientation: landscape) and (max-width: 700px) { 
+    .hero{
+        background-position-y: -45px;
+        background-position-x: -540px;
+    }
+    
+    #barra_nav a{
+        color: var(--parrafos);
+    }
+    .contenedor .contenido a{
+        padding: .2rem 0;
+    }
 }
 
 
