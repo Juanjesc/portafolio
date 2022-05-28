@@ -48,7 +48,8 @@ window.addEventListener('scroll', ()=>{
         navegador.style.position ='fixed'
         navegador.style.top = '0';
         navegador.style.display = 'flex';
-        navegador.style.justifyContent = 'space-around'
+        navegador.style.justifyContent = 'center';
+        navegador.style.gap='4rem'
         navegador.style.width = "100%";
         navegador.style.backgroundColor = 'var(--negro)'
        
