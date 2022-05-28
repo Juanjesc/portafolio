@@ -16,6 +16,7 @@ window.onload = function () {
     iconQuestion[3].title ="El mensaje no debe quedar vacío."
 
     
+    
 }
 
 
@@ -38,6 +39,8 @@ window.addEventListener('scroll', ()=>{
     var scroll = window.scrollY;
     var texto_nav = document.querySelectorAll("#barra_nav a");
     var flechita = document.querySelector(".fa-arrow-alt-circle-up");
+    var header = document.querySelector('header');
+
 
     
     if(scroll>700){
@@ -58,6 +61,10 @@ window.addEventListener('scroll', ()=>{
         navegador.style.margin=0;
         
         flechita.style.display='block';
+
+        if (window.innerWidth < 710){
+            header.style.display='block';
+        }
 
        
         for (let i = 0; i<texto_nav.length;i++){
@@ -87,6 +94,7 @@ window.addEventListener('scroll', ()=>{
         navegador.style.boxShadow='none';
         navegador.classList.remove("vacio");
         flechita.style.display='none';
+        header.style.display='none';
       
         
         for (let i = 0; i<texto_nav.length;i++){
@@ -96,16 +104,8 @@ window.addEventListener('scroll', ()=>{
         }
         if (window.innerWidth < 510){
             navegador.style.marginTop=0;
-            
-            
         }
-        
-        
     }
-    
-    
-    
-    
 }); 
 
 //validación formulario

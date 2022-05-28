@@ -133,49 +133,18 @@ span{
     display: none;
     
 }
-/* .logotipo_cabecera{
-    margin-bottom: 0;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    width: 60%;
-    padding: 0;
-    margin: 0;
-    
-} */
-/* 
-.logotipo_cabecera img{
-    max-width: 30%;
-    height: 30%;
-    align-self: center;
-    position: relative;
-    right: 3.5rem;
-    top: .4rem ;
-    transition: .5s ease-in;
-    
-    
-    
+
+/*En pruebas header */
+
+header{
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 10;
     
 }
-.logotipo_cabecera img:hover{
-    transform: rotate(10deg);
-} */
 
 @media (min-width: 768px) { 
-    /* lOGOTIPO CABECERA */
-    /* .logotipo_cabecera{
-        flex-direction: row;
-        width: 40%;
-        margin-bottom: 2rem;
-        align-items: center;
-    }
-    .logotipo_cabecera img{
-        max-width: 20%;
-        height: 20%;
-        position: relative;
-        right: 0;
-        top: 0;
-    } */
     
     .fa-arrow-alt-circle-up{
         position: fixed;
@@ -455,6 +424,7 @@ p{
     color:var(--claro);
     text-transform: uppercase;
     text-align: center;
+    font-family: var(--fuentePrincipal);
     
 }
 .sobre-mi-info p{
