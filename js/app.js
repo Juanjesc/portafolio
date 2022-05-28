@@ -15,8 +15,6 @@ window.onload = function () {
     iconQuestion[1].title ="El email debe ser válido conteniendo el carácter '@', el email no puede estar vacío."
     iconQuestion[3].title ="El mensaje no debe quedar vacío."
 
-  
-
     
 }
 
