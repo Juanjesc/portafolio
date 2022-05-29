@@ -44,26 +44,29 @@ window.addEventListener('scroll', ()=>{
 
     
     if(scroll>700){
-        navegador.className="boxi";
-        navegador.style.position ='fixed'
-        navegador.style.top = '0';
-        navegador.style.display = 'flex';
-        navegador.style.justifyContent = 'center';
-        navegador.style.gap='4rem'
-        navegador.style.width = "100%";
-        navegador.style.backgroundColor = 'var(--negro)'
-       
-        navegador.style.zIndex = '99999';
-        
-        navegador.style.transition = '.5s ease-in-out';
-        navegador.style.left='0';
-        navegador.style.padding= .5+"rem";
-        navegador.style.boxShadow='0 5px 10px var(--secundario)';
-        navegador.style.margin=0;
-        
-        flechita.style.display='block';
+        if (window.innerWidth > 710){
 
-        if (window.innerWidth < 710){
+            navegador.className="boxi";
+            navegador.style.position ='fixed'
+            navegador.style.top = '0';
+            navegador.style.display = 'flex';
+            navegador.style.justifyContent = 'center';
+            navegador.style.gap='4rem'
+            navegador.style.width = "100%";
+            navegador.style.backgroundColor = 'var(--negro)'
+        
+            navegador.style.zIndex = '99999';
+            
+            navegador.style.transition = '.5s ease-in-out';
+            navegador.style.left='0';
+            navegador.style.padding= .5+"rem";
+            navegador.style.boxShadow='0 5px 10px var(--secundario)';
+            navegador.style.margin=0;
+            
+            flechita.style.display='block';
+        }
+       
+        else if (window.innerWidth <= 710){
             header.style.display='block';
         }
 
