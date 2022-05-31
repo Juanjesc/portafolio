@@ -15,6 +15,19 @@ window.onload = function () {
     iconQuestion[1].title ="El email debe ser válido conteniendo el carácter '@', el email no puede estar vacío."
     iconQuestion[3].title ="El mensaje no debe quedar vacío."
 
+    /* Idiomas */
+
+    var flag = document.querySelector('.flag');
+
+    flag.addEventListener('click',()=>{
+
+        if (flag.classList.contains('es')){
+            location.href='gb/index.html';
+        }
+        else{
+            location.href='../index.html';
+        }
+    })
     
     
 }
@@ -40,6 +53,7 @@ window.addEventListener('scroll', ()=>{
     var texto_nav = document.querySelectorAll("#barra_nav a");
     var flechita = document.querySelector(".fa-arrow-alt-circle-up");
     var header = document.querySelector('header');
+    var flags = document.querySelector('.flags_wrapper');
 
 
     
@@ -55,19 +69,23 @@ window.addEventListener('scroll', ()=>{
             navegador.style.width = "100%";
             navegador.style.backgroundColor = 'var(--negro)'
         
-            navegador.style.zIndex = '99999';
+            navegador.style.zIndex = '4';
             
             navegador.style.transition = '.5s ease-in-out';
             navegador.style.left='0';
             navegador.style.padding= .5+"rem";
             navegador.style.boxShadow='0 5px 10px var(--secundario)';
             navegador.style.margin=0;
-            
             flechita.style.display='block';
         }
        
         else if (window.innerWidth <= 710){
             header.style.display='block';
+            flags.style.left=0;
+            flags.style.display='block';
+            flags.style.top='25px';
+    
+
         }
 
        
@@ -83,7 +101,7 @@ window.addEventListener('scroll', ()=>{
         }
         
   
-    }
+    } //fin scroll > 700
     else{
         navegador.className="";
         navegador.style.position ='relative'
@@ -94,12 +112,13 @@ window.addEventListener('scroll', ()=>{
         navegador.style.marginTop=2+"rem";
         navegador.style.color = '#ffffff'
         navegador.style.backgroundColor = 'transparent'
-        navegador.style.zIndex = '99999';
+        navegador.style.zIndex = '4';
         navegador.style.boxShadow='none';
         navegador.classList.remove("vacio");
         flechita.style.display='none';
         header.style.display='none';
-      
+        
+        
         
         for (let i = 0; i<texto_nav.length;i++){
             
@@ -107,6 +126,7 @@ window.addEventListener('scroll', ()=>{
             texto_nav[i].style.color='var(--oscuro)'
         }
         if (window.innerWidth < 510){
+            flags.style.display='none';
             navegador.style.marginTop=0;
         }
     }
