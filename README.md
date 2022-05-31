@@ -1,6 +1,6 @@
 - Bienvenidos al repositorio de mi portafolio, espero que os guste 🤠 🤙
 
-- https://juanjesc.github.io/portafolio/
+- https://juanjesc.netlify.app/
 
 - La paleta que estoy usando se puede encontrar aquí https://www.happyhues.co/palettes/4
 
