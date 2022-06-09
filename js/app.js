@@ -58,7 +58,7 @@ window.addEventListener('scroll', ()=>{
 
     
     if(scroll>700){
-        if (window.innerWidth > 710){
+        if (window.innerWidth > 910){
 
             navegador.className="boxi";
             navegador.style.position ='fixed'
@@ -79,13 +79,11 @@ window.addEventListener('scroll', ()=>{
             flechita.style.display='block';
         }
        
-        else if (window.innerWidth <= 710){
+        else if (window.innerWidth <= 910){
             header.style.display='block';
             flags.style.left=0;
             flags.style.display='block';
             flags.style.top='25px';
-    
-
         }
 
        
