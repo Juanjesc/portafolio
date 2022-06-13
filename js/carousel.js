@@ -6,7 +6,7 @@ $(function () {
         nav: true,
         navText: ['<i class="fa-solid fa-caret-left"></i>', '<i class="fa-solid fa-caret-right"></i>'],
         dots: true,
-        autoplay:false,
+        autoplay:true,
         autoplayHoverPause: true,
         dotsEach: 3,
         responsive: {
