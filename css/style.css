@@ -755,9 +755,11 @@ i:hover{
     outline: none;
     background-color: transparent;
     color: var(--parrafos);
-    box-shadow: 0px 0px 5px var(--secundario);  
+    -webkit-appearance: none;
+    box-shadow: 0 0 5px var(--secundario);  
     transition: .5s ease-in-out; 
     height: 7rem;
+    -webkit-box-shadow: 0 0 5px var(--secundario);
     
 }
 .boton{
