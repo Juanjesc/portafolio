@@ -15,19 +15,6 @@ window.onload = function () {
     iconQuestion[1].title ="El email debe ser válido conteniendo el carácter '@', el email no puede estar vacío."
     iconQuestion[3].title ="El mensaje no debe quedar vacío."
 
-    /* Idiomas */
-
-    var flag = document.querySelector('.flag');
-
-    flag.addEventListener('click',()=>{
-
-        if (flag.classList.contains('es')){
-            location.href='gb/index.html';
-        }
-        else{
-            location.href='../index.html';
-        }
-    })
     
     
 }
@@ -53,7 +40,6 @@ window.addEventListener('scroll', ()=>{
     var texto_nav = document.querySelectorAll("#barra_nav a");
     var flechita = document.querySelector(".fa-arrow-alt-circle-up");
     var header = document.querySelector('header');
-    var flags = document.querySelector('.flags_wrapper');
 
 
     
@@ -81,9 +67,6 @@ window.addEventListener('scroll', ()=>{
        
         else if (window.innerWidth <= 910){
             header.style.display='block';
-            flags.style.left=0;
-            flags.style.display='block';
-            flags.style.top='25px';
         }
 
        
@@ -124,7 +107,6 @@ window.addEventListener('scroll', ()=>{
             texto_nav[i].style.color='var(--oscuro)'
         }
         if (window.innerWidth < 510){
-            flags.style.display='none';
             navegador.style.marginTop=0;
         }
     }
