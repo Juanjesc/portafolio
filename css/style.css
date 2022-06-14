@@ -94,7 +94,7 @@ span{
     display: none;
     
 }
-/* IDIOMAS */
+/* IDIOMAS
 .flags_wrapper{
     position: fixed;
     top: 25px;
@@ -132,7 +132,7 @@ span{
         display: none;
     }
 }
-
+ */
 
 
 /* Captchat */
@@ -238,8 +238,6 @@ header{
         padding: .2rem 0;
     }
 }
-
-
 .hero .contenedor{
     display: flex;
     flex-direction: column;
@@ -264,6 +262,7 @@ header{
 .subtitulo{
     font-size: 1.5rem;
     max-width: 60%;
+    color: var(--parrafos);
     
 }
 /* ANIMATION BOX SHADOW*/
@@ -333,7 +332,7 @@ header{
     font-size: 1.2rem;
     padding: .8rem;
     font-family: var(--fuentePrincipal);
-    color: var(--oscuro);
+    color: var(--parrafos);
     width: max-content;
     border-radius: 20px;
     font-weight: 400;
@@ -387,6 +386,12 @@ header{
     }
     
     
+}
+/* Media query para ajustar el menú nav del hero en portátiles */
+@media (max-height: 770px) and (min-width: 1200px) { 
+    .hero .contenido{
+        margin-top: 6rem;
+    }
 }
 
 /*Apartado de servicios */
@@ -491,10 +496,7 @@ p{
         color: var(--parrafos);
         text-align: center;
      
-    }
-    
-    
-    
+    }  
 }
 /* Portafolio*/
 

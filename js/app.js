@@ -104,7 +104,7 @@ window.addEventListener('scroll', ()=>{
         for (let i = 0; i<texto_nav.length;i++){
             
             texto_nav[i].style.fontWeight='400';
-            texto_nav[i].style.color='var(--oscuro)'
+            texto_nav[i].style.color='var(--parrafos)'
         }
         if (window.innerWidth < 510){
             navegador.style.marginTop=0;
