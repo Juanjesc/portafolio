@@ -33,9 +33,7 @@ html{
 body{
     font-family: var(--fuenteSecundaria);
     background-color: var(--negro);
-    
 
-    
 }
 
 .contenedor{
@@ -346,6 +344,14 @@ header{
     
     padding: .8rem !important;
     transform: rotate(-2deg);
+    
+}
+.activooo{
+    cursor: pointer;
+    color: var(--secundario) !important;
+    background-color: var(--primario);
+    padding: .8rem !important;
+    transform: rotate(-2deg);
 
 }
 @media (min-width: 768px) {
@@ -522,6 +528,7 @@ p{
     color: var(--claro);
     margin-top: 6rem;
     padding: 2rem;
+    font-family: var(--fuentePrincipal);
 }
 /* .listado{
     display: grid;
@@ -1169,6 +1176,25 @@ footer{
         width: 80%;
     }
 }
+/* pruebas */
+
+#barra_nav.activoo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    background-color: rgba(1, 1, 1, .97);
+    z-index: 4;
+    transition: .5s ease-in-out;
+    padding: .5rem;
+    box-shadow: 0 5px 10px var(--secundario);
+    margin: 0;
+}
+
+
 
 
 

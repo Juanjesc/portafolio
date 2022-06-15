@@ -15,11 +15,7 @@ window.onload = function () {
     iconQuestion[1].title ="El email debe ser válido conteniendo el carácter '@', el email no puede estar vacío."
     iconQuestion[3].title ="El mensaje no debe quedar vacío."
 
-    
-    
 }
-
-
 function cambiar_color(){
     
     var imagen_formu = document.querySelector("#imagen_contacto");
@@ -37,75 +33,48 @@ function color_defecto(){
 window.addEventListener('scroll', ()=>{
     var navegador = document.getElementById('barra_nav');
     var scroll = window.scrollY;
-    var texto_nav = document.querySelectorAll("#barra_nav a");
+    const texto_nav = document.querySelectorAll("#barra_nav.activoo a");
     var flechita = document.querySelector(".fa-arrow-alt-circle-up");
     var header = document.querySelector('header');
-
-
-    
+ 
     if(scroll>700){
         if (window.innerWidth > 910){
-
             navegador.className="boxi";
-            navegador.style.position ='fixed'
-            navegador.style.top = '0';
-            navegador.style.display = 'flex';
-            navegador.style.justifyContent = 'center';
-            navegador.style.gap='4rem'
-            navegador.style.width = "100%";
-            navegador.style.backgroundColor = 'var(--negro)'
-        
-            navegador.style.zIndex = '4';
-            
-            navegador.style.transition = '.5s ease-in-out';
-            navegador.style.left='0';
-            navegador.style.padding= .5+"rem";
-            navegador.style.boxShadow='0 5px 10px var(--secundario)';
-            navegador.style.margin=0;
+            navegador.classList.add('activoo');
             flechita.style.display='block';
         }
-       
         else if (window.innerWidth <= 910){
             header.style.display='block';
         }
-
-       
-        for (let i = 0; i<texto_nav.length;i++){
-            
-            texto_nav[i].style.fontWeight='bold';
-            texto_nav[i].style.color='var(--claro)';
-
-            
-        }
+        /* Función que fija el estilo hover a los botones */
+        texto_nav.forEach(button =>{
+            button.style.fontWeight='bold';
+            button.style.color='var(--claro)';
+            button.addEventListener("click",_ =>{
+                texto_nav.forEach(button =>{
+                    button.classList.remove("activooo")
+                })
+                button.classList.toggle('activooo')
+            })
+        })  
         if (window.innerWidth < 510){
             navegador.className=("vacio");
         }
-        
-  
+          
     } //fin scroll > 700
     else{
         navegador.className="";
-        navegador.style.position ='relative'
-        navegador.style.display = 'block';
-        navegador.style.width = "100%";
-        navegador.style.transition = '.1s';
-        navegador.style.padding=0;
-        navegador.style.marginTop=2+"rem";
-        navegador.style.color = '#ffffff'
-        navegador.style.backgroundColor = 'transparent'
-        navegador.style.zIndex = '4';
-        navegador.style.boxShadow='none';
+        navegador.classList.remove('activoo')
         navegador.classList.remove("vacio");
         flechita.style.display='none';
         header.style.display='none';
-        
-        
-        
-        for (let i = 0; i<texto_nav.length;i++){
-            
-            texto_nav[i].style.fontWeight='400';
-            texto_nav[i].style.color='var(--parrafos)'
-        }
+        texto_nav.forEach(button =>{
+            button.classList.remove("activooo");
+        })
+        texto_nav.forEach(button =>{
+            button.style.fontWeight='400';
+            button.style.color='var(--parrafos)';
+        })   
         if (window.innerWidth < 510){
             navegador.style.marginTop=0;
         }
