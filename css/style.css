@@ -337,30 +337,24 @@ header{
     transition: .2s ease;
    
 }
-.contenido a:hover{
-    cursor: pointer;
-    color: var(--secundario) !important;
-    background-color: var(--primario);
+/*Este media query es para evitar el hover en dispositivos
+móviles y tablets, haciendo que no se quede fijado al clickar
+el estado del botón en hover. */
+@media (min-width: 900px) { 
+    .contenido a:hover{
+        cursor: pointer;
+        color: var(--secundario) !important;
+        background-color: var(--primario);
+        padding: .8rem !important;
+        transform: rotate(-2deg);
+        font-weight: bold !important;
+    }
     
-    padding: .8rem !important;
-    transform: rotate(-2deg);
-    
-}
-.activooo{
-    cursor: pointer;
-    color: var(--secundario) !important;
-    background-color: var(--primario);
-    padding: .8rem !important;
-    transform: rotate(-2deg);
-
 }
 @media (min-width: 768px) {
     
     .titulo{
-        
         font-size: 3rem;
-        
-        
     }
     .subtitulo{
         font-size: 2rem;
@@ -379,19 +373,11 @@ header{
     .contenido a{
         font-size: 1.6rem;
         padding: .8rem;
-        
     }
-    .contenido a:hover{
-        font-weight: 900 !important; /*Produce el fallo! */
-        
-    }
- 
     #barra_nav{
         margin-top: 2rem;
         
     }
-    
-    
 }
 /* Media query para ajustar el menú nav del hero en portátiles */
 @media (max-height: 770px) and (min-width: 1200px) { 

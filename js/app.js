@@ -19,8 +19,6 @@ window.onload = function () {
 function cambiar_color(){
     
     var imagen_formu = document.querySelector("#imagen_contacto");
-    
-    
     imagen_formu.style.filter= "drop-shadow(0 0 50px var(--boton))";
     
 }
@@ -40,23 +38,17 @@ window.addEventListener('scroll', ()=>{
     if(scroll>700){
         if (window.innerWidth > 910){
             navegador.className="boxi";
-            navegador.classList.add('activoo');
+            navegador.classList.toggle('activoo');
             flechita.style.display='block';
+            texto_nav.forEach(button =>{
+                button.style.fontWeight='bold';
+                button.style.color='var(--claro)';
+            })  
         }
         else if (window.innerWidth <= 910){
             header.style.display='block';
         }
         /* Función que fija el estilo hover a los botones */
-        texto_nav.forEach(button =>{
-            button.style.fontWeight='bold';
-            button.style.color='var(--claro)';
-            button.addEventListener("click",_ =>{
-                texto_nav.forEach(button =>{
-                    button.classList.remove("activooo")
-                })
-                button.classList.toggle('activooo')
-            })
-        })  
         if (window.innerWidth < 510){
             navegador.className=("vacio");
         }
@@ -69,12 +61,9 @@ window.addEventListener('scroll', ()=>{
         flechita.style.display='none';
         header.style.display='none';
         texto_nav.forEach(button =>{
-            button.classList.remove("activooo");
-        })
-        texto_nav.forEach(button =>{
             button.style.fontWeight='400';
             button.style.color='var(--parrafos)';
-        })   
+        })  
         if (window.innerWidth < 510){
             navegador.style.marginTop=0;
         }
