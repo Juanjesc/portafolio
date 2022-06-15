@@ -14,6 +14,32 @@ window.onload = function () {
     iconQuestion[0].title ="El nombre debe contener mínimo 3 caracteres, no debe contener números, y no debe estar vacío.";
     iconQuestion[1].title ="El email debe ser válido conteniendo el carácter '@', el email no puede estar vacío."
     iconQuestion[3].title ="El mensaje no debe quedar vacío."
+    var enlaces = document.querySelectorAll("#barra_nav a");
+    enlaces.forEach(element =>{
+        element.addEventListener("click",()=>{
+            
+            switch (element.textContent) {
+                case 'Sobre mí':
+                    document.getElementById("about-me").scrollIntoView();
+                    break;
+                case 'Skills':
+                    document.getElementById("skills").scrollIntoView();
+                    break;
+                case 'Proyectos':
+                    document.getElementById("portafolio").scrollIntoView();
+                    break;
+                case 'Contacta conmigo':
+                    document.getElementById("contacta").scrollIntoView();
+                    break;
+                default:
+                    break;
+            }
+        })
+    })
+    const arrow_top = document.getElementById('arrow_top');
+    arrow_top.addEventListener('click',()=>{
+        document.getElementById('hero').scrollIntoView();
+    })
 
 }
 function cambiar_color(){

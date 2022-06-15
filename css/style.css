@@ -337,6 +337,10 @@ header{
     transition: .2s ease;
    
 }
+/* Sobreescribiendo bootstrap */
+a:not([href]):not([class]), a:not([href]):not([class]):hover{
+    color: var(--parrafos);
+}
 /*Este media query es para evitar el hover en dispositivos
 móviles y tablets, haciendo que no se quede fijado al clickar
 el estado del botón en hover. */
