@@ -8,16 +8,17 @@ $(function () {
         dots: true,
         autoplay:true,
         autoplayHoverPause: true,
-        dotsEach: 3,
+        dotsEach: 1,
         responsive: {
             0: {
                 items: 1, 
                 margin: 10,
-                dotsEach: 2
+                dotsEach: 1
             }, 
             1220:{
                 items:2,
-                margin: 10
+                margin: 10,
+                dotsEach: 2
                 
             },
             1800: {

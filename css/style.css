@@ -643,7 +643,8 @@ i:hover{
             
     display: inline-flex;
     position: absolute;
-    left: 20px;
+    width: 100%;
+    justify-content: center;
 }
 .owl-dot{
     width: 40px;
@@ -688,8 +689,7 @@ i:hover{
         font-size: 46px;
     }
     .owl-dots{
-        left: 46.5%;
-        bottom: -20px;
+        bottom: -30px;
     }
 
 
