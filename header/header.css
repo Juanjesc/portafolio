@@ -80,6 +80,7 @@ nav.nav_wrapper{
     text-transform: uppercase;
     cursor: pointer;
     transition: all .2s ease-in;
+    font-weight: bold;
     
 }
 .menu_items li a:hover{
@@ -97,7 +98,7 @@ nav.nav_wrapper{
     color: var(--textos_botones);
 }
 ul.show{
-    top: 86px; /* 85px del nav + 1 px del border blue */
+    top: 85px; /* 85px del nav + 1 px del border blue */
 }
 @media (max-width: 952px) { 
     
@@ -116,7 +117,7 @@ ul.show{
         position: fixed;
         width: 100vw;
         height: calc(100% - 85px);
-        background: var(--primario);
+        background: var(--negro);
         top: -100vh;
         text-align: center;
         transition: all .4s;
@@ -138,7 +139,7 @@ ul.show{
     }
     .menu_items li a{
         font-size: 20px;
-        color: var(--secundario);
+        color: var(--secundario) !important;
         font-family: var(--fuenteTerciaria);
         
     }

@@ -14,6 +14,7 @@ window.onload = function () {
     iconQuestion[0].title ="El nombre debe contener mínimo 3 caracteres, no debe contener números, y no debe estar vacío.";
     iconQuestion[1].title ="El email debe ser válido conteniendo el carácter '@', el email no puede estar vacío."
     iconQuestion[3].title ="El mensaje no debe quedar vacío."
+    /* Redireccionamiento de los enlaces a las distintas secciones */
     var enlaces = document.querySelectorAll("#barra_nav a");
     enlaces.forEach(element =>{
         element.addEventListener("click",()=>{
@@ -36,6 +37,7 @@ window.onload = function () {
             }
         })
     })
+    /* Redireccionamiento al top de la web */
     const arrow_top = document.getElementById('arrow_top');
     arrow_top.addEventListener('click',()=>{
         document.getElementById('hero').scrollIntoView();
@@ -60,6 +62,8 @@ window.addEventListener('scroll', ()=>{
     const texto_nav = document.querySelectorAll("#barra_nav.activoo a");
     var flechita = document.querySelector(".fa-arrow-alt-circle-up");
     var header = document.querySelector('header');
+    const menu_items = document.querySelector('.menu_items');
+    const icon = document.querySelector('.btn_menu i');
  
     if(scroll>700){
         if (window.innerWidth > 910){
@@ -86,6 +90,9 @@ window.addEventListener('scroll', ()=>{
         navegador.classList.remove("vacio");
         flechita.style.display='none';
         header.style.display='none';
+        menu_items.classList.remove('show');
+        icon.classList.remove('fa-x')
+
         texto_nav.forEach(button =>{
             button.style.fontWeight='400';
             button.style.color='var(--parrafos)';
