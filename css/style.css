@@ -18,6 +18,8 @@
     --php: #858EBB;
     --gulp: #E54748;
     --react: #5ED3F3;
+    --html: #DD4B25;
+    --css: #0068BA;
     
     
 }
@@ -88,6 +90,12 @@ span{
 }
 .gulp-color {
     color: var(--gulp);
+}
+.html-color{
+    color: var(--html);
+}
+.css-color{
+    color: var(--css);
 }
 .ola{
     display: none;
