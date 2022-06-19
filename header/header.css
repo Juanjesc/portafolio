@@ -49,7 +49,6 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: .9;
     
 
 }
@@ -96,6 +95,9 @@ nav.nav_wrapper{
     margin-right: 30px;
     cursor: pointer;
     color: var(--textos_botones);
+}
+.show{
+    overflow-y: hidden;
 }
 ul.show{
     top: 85px; /* 85px del nav + 1 px del border blue */

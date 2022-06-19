@@ -8,12 +8,19 @@ addEventListener('DOMContentLoaded', ()=>{
             
             menu_items.classList.toggle('show');
             icon.classList.toggle('fa-x');
+            if (menu_items.classList.contains('show')){
+                document.body.style.overflow='hidden';
+            }
+            else{
+                document.body.style.overflow='scroll';
+            }
         }); 
     }
     btn_sections.forEach(element => {
         element.addEventListener('click', ()=>{
             document.getElementById(element.ariaValueText).scrollIntoView();
             menu_items.classList.remove('show');
+            document.body.style.overflow='scroll';
             icon.classList.toggle('fa-x');
 
         })
