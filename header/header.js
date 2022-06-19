@@ -12,7 +12,6 @@ addEventListener('DOMContentLoaded', ()=>{
     }
     btn_sections.forEach(element => {
         element.addEventListener('click', ()=>{
-            console.log(element.ariaValueText)
             document.getElementById(element.ariaValueText).scrollIntoView();
             menu_items.classList.remove('show');
             icon.classList.toggle('fa-x');
