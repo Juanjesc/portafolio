@@ -233,11 +233,8 @@ header{
     /* background-position-x: -640px; */
     
 }
-@media (orientation: landscape) and (max-width: 700px) { 
-    .hero{
-        background-position-y: -45px;
-        background-position-x: -540px;
-    }
+@media (orientation: landscape) and (max-width: 920px) { 
+
     
     #barra_nav a{
         color: var(--parrafos);
@@ -256,7 +253,7 @@ header{
     
     color: var(--oscuro);
     margin-top: 3rem;
-     
+    
 }
 
 .titulo{
@@ -285,7 +282,7 @@ header{
 }
 .boxi2{
     animation: boxi2 10s ease-in-out 0s infinite alternate-reverse;
-
+    
 }
 .boxi3{
     animation: boxi3 5s ease-in-out 0s infinite alternate-reverse;
@@ -318,7 +315,7 @@ header{
     to{
         box-shadow: 0px -40px 70px var(--secundario);
     }
-
+    
 }
 @keyframes boxi3 {
     from{
@@ -345,7 +342,7 @@ header{
     border-radius: 20px;
     font-weight: 400;
     transition: .2s ease;
-   
+    
 }
 /* Sobreescribiendo bootstrap */
 a:not([href]):not([class]), a:not([href]):not([class]):hover{
@@ -390,6 +387,25 @@ el estado del botón en hover. */
     #barra_nav{
         margin-top: 2rem;
         
+    }
+}
+/*Media query para ajustar el contenido del hero en móviles grandes en landscape
+como iphone 12x y superior por ejemplo */
+@media (orientation: landscape) and (max-width: 920px) { 
+    .hero{
+        background-size: cover;
+    }
+    .hero .contenido{
+        margin-top: 1rem;
+    }
+    .hero .titulo{
+        font-size: 2rem;
+    }
+    .hero .subtitulo{
+        font-size: 1.5rem;
+    }
+    .contenido a{
+        font-size: 1.3rem;
     }
 }
 /* Media query para ajustar el menú nav del hero en portátiles */
