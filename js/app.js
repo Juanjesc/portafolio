@@ -19,7 +19,7 @@ window.onload = function () {
     enlaces.forEach(element =>{
      
         element.addEventListener('click', ()=>{
-            document.getElementById(element.ariaValueText).scrollIntoView();
+            document.getElementById(element.name).scrollIntoView();
 
         })
      

@@ -18,7 +18,7 @@ addEventListener('DOMContentLoaded', ()=>{
     }
     btn_sections.forEach(element => {
         element.addEventListener('click', ()=>{
-            document.getElementById(element.ariaValueText).scrollIntoView();
+            document.getElementById(element.name).scrollIntoView();
             menu_items.classList.remove('show');
             document.body.style.overflow='scroll';
             icon.classList.toggle('fa-x');
