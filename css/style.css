@@ -1208,12 +1208,8 @@ footer{
     box-shadow: 0 5px 10px var(--secundario);
     margin: 0;
 }
-
-
-
-
-
-
-
-
-
+#skills,
+#portafolio,
+#contacta{
+    scroll-margin-top: 95px;
+}

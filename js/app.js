@@ -17,25 +17,13 @@ window.onload = function () {
     /* Redireccionamiento de los enlaces a las distintas secciones */
     var enlaces = document.querySelectorAll("#barra_nav a");
     enlaces.forEach(element =>{
-        element.addEventListener("click",()=>{
-            
-            switch (element.textContent) {
-                case 'Sobre mí':
-                    document.getElementById("about-me").scrollIntoView();
-                    break;
-                case 'Skills':
-                    document.getElementById("skills").scrollIntoView();
-                    break;
-                case 'Proyectos':
-                    document.getElementById("portafolio").scrollIntoView();
-                    break;
-                case 'Contacta conmigo':
-                    document.getElementById("contacta").scrollIntoView();
-                    break;
-                default:
-                    break;
-            }
+     
+        element.addEventListener('click', ()=>{
+            console.log(element.ariaValueText)
+            document.getElementById(element.ariaValueText).scrollIntoView();
+
         })
+     
     })
     /* Redireccionamiento al top de la web */
     const arrow_top = document.getElementById('arrow_top');
