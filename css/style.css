@@ -233,16 +233,6 @@ header{
     /* background-position-x: -640px; */
     
 }
-@media (orientation: landscape) and (max-width: 920px) { 
-
-    
-    #barra_nav a{
-        color: var(--parrafos);
-    }
-    .contenedor .contenido a{
-        padding: .2rem 0;
-    }
-}
 .hero .contenedor{
     display: flex;
     flex-direction: column;
@@ -404,8 +394,18 @@ como iphone 12x y superior por ejemplo */
     .hero .subtitulo{
         font-size: 1.5rem;
     }
-    .contenido a{
+    #barra_nav a{
+        color: var(--parrafos);
+    }
+    .contenedor .contenido a{
+        padding: .2rem 0;
         font-size: 1.3rem;
+    }
+}
+/* Media query para quitar la ola cuando el dispositivo sea landscape y máximo 1300px (que no salga en tablets)*/
+@media (orientation: landscape) and (max-width: 1300px){
+    .ola{
+        display: none;
     }
 }
 /* Media query para ajustar el menú nav del hero en portátiles */
