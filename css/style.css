@@ -332,6 +332,7 @@ header{
     border-radius: 20px;
     font-weight: 400;
     transition: .2s ease;
+    user-select: none;
     
 }
 /* Sobreescribiendo bootstrap */

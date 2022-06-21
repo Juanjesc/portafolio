@@ -80,6 +80,7 @@ nav.nav_wrapper{
     cursor: pointer;
     transition: all .2s ease-in;
     font-weight: bold;
+    user-select: none;
     
 }
 .menu_items li a:hover{
