@@ -3,7 +3,7 @@
 ![image](https://user-images.githubusercontent.com/89318618/174077544-1adae5f2-5423-425d-bb01-7bbd7b07abe1.png)
 
 
-- https://juanjesc.netlify.app/
+- https://www.juanjesc.dev/
 
 - La paleta que estoy usando se puede encontrar aquí https://www.happyhues.co/palettes/4
 
@@ -11,4 +11,4 @@
 
 - Carrusel hecho con la librería OWL-Carousel.
 
-- Efecto scroll con la librería AOS.
+- Efecto de animaciones al hacer scroll con la librería AOS.
