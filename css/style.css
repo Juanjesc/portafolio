@@ -1176,6 +1176,10 @@ footer{
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled{
     display: block;
 }
+/* Fix error in console */
+.owl-carousel{
+    touch-action: manipulation;
+}
 @media (max-width: 500px) { 
     .cards_wrapper .card .content-wrapper-hover .content-btn-hover {
 
@@ -1183,8 +1187,16 @@ footer{
         justify-content: flex-start;
         align-items: center;
         width: max-content;
-    
+        gap: .8rem;
     }
+    .cards_wrapper .card .content-wrapper-hover .content-text-hover {
+        margin: 0;
+        width: 287px;
+        position: absolute;
+        top: 27%;
+      
+      }
+    
     .cards_wrapper .card .content-wrapper-hover .content-btn-hover a {
         width: 100%
     }
