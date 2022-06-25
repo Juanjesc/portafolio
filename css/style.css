@@ -1205,6 +1205,17 @@ footer{
         width: 80%;
     }
 }
+/* Solución a los clicks accidentales en las tarjetas que te redirigen automáticamente
+a los enlaces sin antes ver la descripción */
+@media (max-width: 900px) { 
+    .cards_wrapper .card .content-wrapper-hover .content-btn-hover {
+        bottom: -10rem;
+        transition: bottom 1s;
+    }
+    .cards_wrapper .card:hover .content-wrapper-hover .content-btn-hover {
+        bottom: 40px;
+    }
+}
 /* pruebas */
 
 #barra_nav.activoo{
