@@ -59,7 +59,8 @@ window.addEventListener('scroll', ()=>{
             flechita.style.display='block';
             texto_nav.forEach(button =>{
                 button.style.fontWeight='bold';
-                button.style.color='var(--claro)';
+                button.style.color='var(--parrafos)';
+                button.style.fontSize='1.3rem'
             })  
         }
         else if (window.innerWidth <= 910){
