@@ -20,7 +20,8 @@
     --react: #5ED3F3;
     --html: #DD4B25;
     --css: #0068BA;
-    
+    --tailwind: #38BDF8;
+    --java: #DC2C2D;
     
 }
 html{
@@ -97,6 +98,12 @@ span{
 }
 .css-color{
     color: var(--css);
+}
+.tailwind-color{
+    color: var(--tailwind);
+}
+.java-color{
+    color: var(--java);
 }
 .ola{
     display: none;
