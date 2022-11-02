@@ -46,7 +46,7 @@ function color_defecto(){
 window.addEventListener('scroll', ()=>{
     var navegador = document.getElementById('barra_nav');
     var scroll = window.scrollY;
-    const texto_nav = document.querySelectorAll("#barra_nav.activoo a");
+    var texto_nav = document.querySelectorAll("#barra_nav.activoo a");
     var flechita = document.querySelector(".fa-arrow-alt-circle-up");
     var header = document.querySelector('header');
     const menu_items = document.querySelector('.menu_items');
@@ -60,7 +60,7 @@ window.addEventListener('scroll', ()=>{
             texto_nav.forEach(button =>{
                 button.style.fontWeight='bold';
                 button.style.color='var(--parrafos)';
-                button.style.fontSize='1.3rem'
+                //button.style.fontSize='1.3rem'
             })  
         }
         else if (window.innerWidth <= 910){
