@@ -238,7 +238,7 @@ function validar() {
 
 
 
-    //formu.submit();
+    formu.submit();
 }
 function validarCorreo(correo) {
     var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
