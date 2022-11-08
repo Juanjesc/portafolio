@@ -122,8 +122,9 @@ function validar() {
         
         }
     }
+    var c_nombre_output = c_nombre.value.trim();
     //Validar campo nombre
-    if (c_nombre.value == ""||c_nombre.value.length<3){
+    if (c_nombre.value == ""||c_nombre.value.length<3 || c_nombre_output.length <3) {
         
         c_nombre.focus();
         c_nombre.classList.toggle("campoError");
@@ -142,7 +143,7 @@ function validar() {
             
             
         }
-        else if(c_nombre.value.length<4){
+        else if(c_nombre.value.length<4 || c_nombre_output.length<4){
             var text_name_length = document.createTextNode("El nombre debe contener más de 3 letras");
             if (window.innerWidth < 400){
                
@@ -161,6 +162,8 @@ function validar() {
     }
     else{
         c_nombre.className="";  
+        c_nombre_output.className="";
+       // console.log('El nombre output enviado es: ' + c_nombre_output + ' el nombre cnombre enviado es : ' + c_nombre.value)
     }
     // //Validar campo email
     if (c_email.value == "" || !validarCorreo(c_email.value)){
@@ -235,7 +238,7 @@ function validar() {
 
 
 
-    formu.submit();
+    //formu.submit();
 }
 function validarCorreo(correo) {
     var expReg= /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
