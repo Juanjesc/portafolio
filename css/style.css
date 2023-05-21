@@ -22,6 +22,7 @@
     --css: #0068BA;
     --tailwind: #38BDF8;
     --java: #DC2C2D;
+    --node: #57A646;
     
 }
 html{
@@ -104,6 +105,9 @@ span{
 }
 .java-color{
     color: var(--java);
+}
+.node-color{
+    color: var(--node);
 }
 .ola{
     display: none;
